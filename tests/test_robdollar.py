@@ -20,8 +20,15 @@ class TestRobdollar(unittest.TestCase):
     def tearDown(self):
         """Tear down test fixtures, if any."""
 
-    def test_000_something(self):
+    def test_load_df(self):
         """Test something."""
+
+    def test_data_check(self):
+        """Test something."""
+
+    def test_feature_selection(self):
+        """Test feature selection"""
+
 
     def test_command_line_interface(self):
         """Test the CLI."""
