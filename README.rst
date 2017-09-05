@@ -21,14 +21,31 @@ robdollar
 command line tool for feature selection
 
 
-* Free software: MIT license
-* Documentation: https://robdollar.readthedocs.io.
-
 
 Features
 --------
 
-* TODO
+* Basic recursive feature selection with Lasso
+* Data qualit
+
+
+To run
+--------
+
+1. Clone locally::
+
+    $ git clone git@github.com:retroam/robdollar.git
+
+2. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
+
+    $ mkvirtualenv robdollar
+    $ cd robdollar/
+    $ python setup.py develop
+
+3. Run CLI client:
+robdollar file target --verbose
+
+e.g.: robdollar linear_regression_challenge.csv 0 --verbose
 
 Credits
 ---------
