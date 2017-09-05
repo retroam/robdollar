@@ -111,7 +111,7 @@ class FeatureSelect(object):
 
             features = self.model.named_steps['feature']
 
-            self.selected_features = X.columns[features.transform(np.arange(len(X.columns)))].values.tolist()[0]
+            self.selected_features = X.columns[features.transform([np.arange(len(X.columns))])].values.tolist()[0]
         except ValueError:
             self.selected_features = []
             logger.error("Issue with data...too small?")
