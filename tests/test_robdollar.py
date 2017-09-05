@@ -7,7 +7,6 @@
 import unittest
 from click.testing import CliRunner
 
-from robdollar import robdollar
 from robdollar import cli
 
 

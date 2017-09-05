@@ -31,7 +31,7 @@ def main(verbose, path, target, file):
     features.feature_selection()
     selected_features = features.selected_features
     if len(selected_features) != 0:
-        features.df[selected_features].to_csv(path + 'output')
+        features.df[selected_features].to_csv(path + 'output.csv')
 
     if verbose:
         click.echo("\nData Quality Report")
