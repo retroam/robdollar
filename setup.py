@@ -13,7 +13,8 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     'Click>=6.0',
-    # TODO: put package requirements here
+    'scikit-learn==0.19.0',
+
 ]
 
 setup_requirements = [

@@ -21,10 +21,10 @@ class TestRobdollar(unittest.TestCase):
         """Tear down test fixtures, if any."""
 
     def test_load_df(self):
-        """Test something."""
+        """Test dataframe load"""
 
     def test_data_check(self):
-        """Test something."""
+        """Test dataframe check"""
 
     def test_feature_selection(self):
         """Test feature selection"""
