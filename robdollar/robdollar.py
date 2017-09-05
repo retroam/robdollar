@@ -3,12 +3,17 @@
 """Main module."""
 import pandas as pd
 from sklearn.linear_model import LinearRegression, RandomizedLasso
+from sklearn.feature_selection import VarianceThreshold
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import Imputer
 import numpy as np
 from sklearn.pipeline import Pipeline
 import logging
+import warnings
+
+
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # TODO
 # Add MAPE instead of RMSE
@@ -95,6 +100,7 @@ class FeatureSelect(object):
         self.model = Pipeline([("imputer", Imputer(missing_values='NaN',
                                                    strategy="mean",
                                                    axis=1)),
+                               ('variance', VarianceThreshold()),
                                ('feature', RandomizedLasso()),
                                ("model", LinearRegression())])
 
