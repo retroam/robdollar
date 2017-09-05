@@ -26,7 +26,7 @@ Features
 --------
 
 * Basic recursive feature selection with Lasso
-* Data qualit
+* Data quality checks
 
 
 To run
@@ -42,10 +42,13 @@ To run
     $ cd robdollar/
     $ python setup.py develop
 
-3. Run CLI client:
-robdollar file target --verbose
+3. Run CLI client::
 
-e.g.: robdollar linear_regression_challenge.csv 0 --verbose
+   $ robdollar file target --verbose
+
+example::
+
+    $ robdollar linear_regression_challenge.csv 0 --verbose
 
 Credits
 ---------
