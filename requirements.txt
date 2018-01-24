@@ -62,7 +62,6 @@ pytz==2017.2
 PyYAML==3.11
 pyzmq==16.0.2
 qtconsole==4.3.1
--e git+git@github.com:retroam/robdollar.git@3ca3c23f1b40c7f5d87d28fe8a64ee024e103c66#egg=robdollar
 scandir==1.5
 scikit-learn==0.19.0
 scipy==0.19.1
