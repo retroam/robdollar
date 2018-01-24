@@ -48,7 +48,7 @@ To run
 
 example::
 
-    $ robdollar linear_regression_challenge.csv 0 --verbose
+    $ robdollar test.csv 0 --verbose
 
 Credits
 ---------
